@@ -1,0 +1,61 @@
+.slide {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#CEEAF9));
+  font-family:"Avenir LT Std", Times, sans-serif;
+  color: #014d65;
+  font-size: 1.3em;
+}
+
+.bigcode pre code { font-size: 1.3em; }
+
+.blockimg img {
+  border: 20px solid #014d65;
+}
+
+.title img { }
+
+h1 {
+  font-weight: bold;
+}
+
+.title h1 {
+  font-weight: bolder;
+  font-size: 160px;
+  color: #014d65;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  letter-spacing:-6px;
+  line-height: 100px;
+}
+
+.title h2 {
+  font-weight: bold;
+  font-size: 95px;
+  color: #0b98b4;
+  margin-bottom: 30px;
+}
+.title h3 {
+  font-weight: lighter;
+  font-size: 50px;
+  color: #0b98b4;
+  border-bottom: 40px;
+}
+
+.subsec h1 {
+  font-weight: bolder;
+  font-size: 160px;
+  color: #014d65;
+  margin-bottom: 5px;
+  line-height: 100px;
+}
+
+.subsec h2 {
+  font-weight: bold;
+  font-size: 95px;
+  margin-top: 10px;
+  color: #0b98b4;
+}
+.subsec h3 {
+  font-weight: lighter;
+  font-size: 50px;
+  color: #0b98b4;
+}
