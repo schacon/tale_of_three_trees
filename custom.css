@@ -5,16 +5,34 @@
   font-size: 1.3em;
 }
 
+.stagingdata {
+  line-height: 19px;
+}
+
+.stagingdata pre code { 
+  font-size: 25px;
+  color: #000;
+}
+
 .bigcode pre code { font-size: 1.3em; }
 
 .blockimg img {
   border: 20px solid #014d65;
 }
 
-.title img { }
-
 h1 {
   font-weight: bold;
+}
+
+.list ul li { 
+  text-align: left;
+  margin-left: 50px;
+}
+
+.list ul li strong {
+  color: #be260d;
+  font-weight: bolder;
+  font-size: 1.3em;
 }
 
 .title h1 {
