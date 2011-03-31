@@ -267,7 +267,7 @@
 
 # undo last commit #
 
-!SLIDE small
+!SLIDE smaller
 
 # `git reset [--mixed] HEAD~` #
 

@@ -107,7 +107,7 @@ table.rdata {
   background: #fff;
   padding: 8px;
   border: 1px solid #333;
-  font-size: 1.6em;
+  font-size: 1.5em;
 }
 
 table.rdata tr.level {
@@ -147,11 +147,11 @@ table.rdata tr td.no-wd {
 }
 
 .backup h1 {
-  margin-bottom: 90px;
+  margin-bottom: 80px;
 }
 .backup {
   line-height: 19px;
 }
 .backup pre code {
-  font-size: 27px;
+  font-size: 25px;
 }
