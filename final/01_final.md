@@ -1,8 +1,7 @@
-!SLIDE subsec
+!SLIDE title
 
-# CODA #
-
-## Back to the roots ##
+### Hi, you've reached Jimmy ###
+## If you can dream it, you can do it! ##
 
 !SLIDE
 

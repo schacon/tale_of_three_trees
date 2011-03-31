@@ -318,5 +318,86 @@
 
 # git checkout #
 
+!SLIDE subsec
 
+# just a bit outside #
+### tried the corner and missed ###
+
+!SLIDE subsec
+
+# 2 forms #
+
+!SLIDE code smaller
+
+# git checkout [commit] [path] #
+
+# git checkout [commit] #
+
+!SLIDE center
+
+![](reset-checkout.png)
+
+!SLIDE center
+
+# Reset v. Checkout #
+
+<table class="rdata">
+  <tr>
+    <th></th>
+    <th>HEAD</th>
+    <th>Index</th>
+    <th>Work Dir</th>
+    <th>WD Safe</th>
+  </tr>
+  <tr class="level">
+    <th>Commit Level</th>
+    <td colspan="4">&nbsp;</th>
+  </tr>
+  <tr class="even">
+    <th class="cmd">reset --soft [commit]</th>
+    <td class="yes">REF</td>
+    <td class="no">NO</td>
+    <td class="no">NO</td>
+    <td class="yes-wd">YES</td>
+  </tr>
+  <tr class="odd">
+    <th class="cmd">reset [commit]</th>
+    <td class="yes">REF</td>
+    <td class="yes">YES</td>
+    <td class="no">NO</td>
+    <td class="yes-wd">YES</td>
+  </tr>
+  <tr class="even">
+    <th class="cmd">reset --hard [commit]</th>
+    <td class="yes">REF</td>
+    <td class="yes">YES</td>
+    <td class="yes">YES</td>
+    <td class="no-wd">NO</td>
+  </tr>
+  <tr class="odd">
+    <th class="cmd">checkout [commit]</th>
+    <td class="yes">HEAD</td>
+    <td class="yes">YES</td>
+    <td class="yes">YES</td>
+    <td class="yes-wd">YES</td>
+  </tr>
+  <tr class="level">
+    <th>File Level</th>
+    <td colspan="4">&nbsp;</th>
+  </tr>
+  <tr class="even">
+    <th class="cmd">reset (commit) [file]</th>
+    <td class="no">NO</td>
+    <td class="yes">YES</td>
+    <td class="no">NO</td>
+    <td class="yes-wd">YES</td>
+  </tr>
+  <tr class="odd">
+    <th class="cmd">checkout (commit) [file]</th>
+    <td class="no">NO</td>
+    <td class="yes">YES</td>
+    <td class="yes">YES</td>
+    <td class="no-wd">NO</td>
+  </tr>
+</table>
 

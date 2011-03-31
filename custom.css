@@ -36,6 +36,13 @@ h1 {
   font-weight: bold;
 }
 
+.listcode ul li { 
+  text-align: left;
+  margin-left: 50px;
+  font-family: monospace;
+  font-size: 40px;
+}
+
 .list ul li { 
   text-align: left;
   margin-left: 50px;
@@ -79,7 +86,7 @@ h1 {
   font-size: 160px;
   color: #014d65;
   margin-bottom: 5px;
-  line-height: 100px;
+  line-height: 130px;
 }
 
 .subsec h2 {
@@ -92,4 +99,59 @@ h1 {
   font-weight: lighter;
   font-size: 50px;
   color: #0b98b4;
+}
+
+table.rdata {
+  margin-left: 50px;
+  width: 90%;
+  background: #fff;
+  padding: 8px;
+  border: 1px solid #333;
+  font-size: 1.6em;
+}
+
+table.rdata tr.level {
+  color: #0b98b4;
+  background: #def;
+}
+
+table.rdata tr.even {
+  background: #eee;
+}
+
+table.rdata tr th.cmd {
+  font-family: monospace;
+  text-align: left;
+}
+table.rdata tr {
+}
+
+table.rdata tr th {
+  padding: 8px;
+}
+table.rdata tr td {
+  padding: 15px 8px;
+  border-left: 1px solid #def;
+}
+table.rdata tr td.no {
+  background: #fdd;
+}
+table.rdata tr td.yes {
+  background: #dfd;
+}
+table.rdata tr td.yes-wd {
+  background: #aea;
+}
+table.rdata tr td.no-wd {
+  background: #eaa;
+}
+
+.backup h1 {
+  margin-bottom: 90px;
+}
+.backup {
+  line-height: 19px;
+}
+.backup pre code {
+  font-size: 27px;
 }
