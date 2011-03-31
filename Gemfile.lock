@@ -1,0 +1,27 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    bluecloth (2.1.0)
+    gli (1.2.6)
+    json (1.5.1)
+    nokogiri (1.4.4)
+    rack (1.2.2)
+    showoff (0.4.1)
+      bluecloth
+      gli (>= 1.2.5)
+      json
+      nokogiri
+      sinatra
+    sinatra (1.2.1)
+      rack (~> 1.1)
+      tilt (>= 1.2.2, < 2.0)
+    tilt (1.2.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bluecloth
+  gli
+  nokogiri
+  showoff
