@@ -256,7 +256,13 @@
 
 !SLIDE code
 
-## git reset HEAD -- file ##
+## git reset ##
+
+!SLIDE code
+
+# OR #
+
+## git reset [file] ##
 
 !SLIDE
 
@@ -276,6 +282,29 @@
 !SLIDE
 
 ![](reset1.png)
+
+!SLIDE
+
+![](reset-mixed.png)
+
+!SLIDE
+
+# undo last commit #
+## but keep the stage ##
+
+!SLIDE smaller
+
+# `git reset --soft HEAD~` #
+
+## moves HEAD back but keeps index ##
+
+!SLIDE
+
+![](reset1.png)
+
+!SLIDE
+
+![](reset-soft.png)
 
 !SLIDE
 
@@ -337,9 +366,10 @@
 
 ![](reset-checkout.png)
 
-!SLIDE center
+!SLIDE center rvc
 
-# Reset v. Checkout #
+## Reset v. Checkout ##
+### schacon.github.com/resetvcheckout.html ###
 
 <table class="rdata">
   <tr>

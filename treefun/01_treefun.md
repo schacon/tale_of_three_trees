@@ -12,6 +12,40 @@
 * git reset --patch (commit) [file]
 * git checkout --patch (commit) [file]
 
+!SLIDE code
+
+# git read-tree #
+
+!SLIDE code
+
+# git write-tree #
+
+!SLIDE commandline incremental
+
+    $ ls
+    README          Rakefile        lib
+
+    $ git init
+    Initialized empty Git repository in /private/tmp/gt/.git/
+    nothing added to commit but untracked files present (use "git add" to track)
+
+    $ git log
+    fatal: bad default revision 'HEAD'
+
+    $ git add --all
+
+    $ git write-tree
+    4b8ad0172510761cb0e07d2c4220932bf41bbd07
+
+    $ git ls-tree 4b8ad0172510761cb0e07d2c4220932bf41bbd07
+    100644 blob 45dc653de6860...    README
+    100644 blob ea3fe2ac46e92...    Rakefile
+    040000 tree 99f1a6d12cb4b...    lib
+
+!SLIDE code
+
+# git commit-tree #
+
 !SLIDE
 
 # Environment Variables #
@@ -181,3 +215,39 @@
     Date:   Thu Mar 31 13:45:56 2011 -0700
 
         back
+
+!SLIDE
+
+# Freeze Submodules Before Push #
+
+!SLIDE tiny
+
+    @@@ ruby
+    current_commit = `git rev-parse HEAD`
+    current_tree = `git rev-parse HEAD^{tree}`
+
+    # get a list of submodules
+    status = `git submodule status`.chomp
+    subdata = status.split("\n")
+    subdata.each do |subline|
+      sharaw, path = subline.split(" ")
+      sha = sharaw[1, sharaw.size - 1]
+      remote = path.gsub('/', '-')
+      `git remote add #{remote} #{path} 2>/dev/null` # fetch each submodule into a remote
+      `git fetch #{remote}`
+      `git read-tree --prefix=#{path} #{sha}` # for each submodule/sha, read-tree the sha into the path
+    end
+
+    # find heroku parent
+    prev_commit = `git rev-parse heroku 2>/dev/null`.chomp  
+    pcommit = (prev_commit != "heroku") ? "-p #{prev_commit}" : ''
+
+    # write-tree/commit-tree with message of what commit sha it's based on
+    tree_sha = `git write-tree`.chomp
+    commit_sha = `echo "deploy at #{current_commit}" | git commit-tree #{tree_sha} #{pcommit}`
+
+    # update-ref
+    `git update-ref refs/heads/heroku #{commit_sha}`
+
+    # reset
+    `git reset HEAD`

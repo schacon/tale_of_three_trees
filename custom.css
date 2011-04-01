@@ -110,6 +110,15 @@ table.rdata {
   font-size: 1.5em;
 }
 
+.rvc h2 {
+  font-size: 60px;
+  font-weight: bold;
+}
+.rvc h3 {
+  font-size: 40px;
+  color: #0b98b4;
+}
+
 table.rdata tr.level {
   color: #0b98b4;
   background: #def;
@@ -154,4 +163,13 @@ table.rdata tr td.no-wd {
 }
 .backup pre code {
   font-size: 25px;
+}
+
+.tiny {
+  line-height: 19px;
+}
+
+.tiny pre code { 
+  font-size: 25px;
+  color: #000;
 }
