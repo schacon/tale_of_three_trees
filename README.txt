@@ -23,3 +23,6 @@ A Tale of Three Trees
 * Conclusion
   - know your trees
   - resources, questions
+
+* View Online
+  - http://threetrees.heroku.com/
