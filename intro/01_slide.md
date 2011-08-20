@@ -18,6 +18,25 @@
 
 ![](octocat-logo.png)
 
+!SLIDE center
+
+## http://git-scm.com ##
+
+![git-scm.com](gitscm.png)
+
+!SLIDE center
+
+![gitref](gitref.png)
+
+## http://gitref.org ##
+
+!SLIDE center
+
+![Pro Git](progit.png)
+
+## http://progit.org ##
+
+
 !SLIDE bullets
 
 # Git Resources #

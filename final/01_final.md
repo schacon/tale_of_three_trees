@@ -28,7 +28,8 @@
 
 # questions? #
 
+### bit.ly/3treespreso ###
 ### threetrees.heroku.com ###
-### schacon.github.com/resetvcheckout.html ###
 ### github.com/schacon/tale_of_three_trees ###
-### gist.github.com/582888 ###
+### schacon.github.com/resetvcheckout.html ###
+### bit.ly/git-examples ###

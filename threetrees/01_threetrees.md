@@ -46,58 +46,13 @@
 
 # The Staging Area #
 
-!SLIDE code smaller
+!SLIDE commandline incremental smaller
 
-    @@@ ruby
-    require 'rugged'
+    $ git ls-files -s
+    100644 a906cb2a4a904a152e80877d4088654daad0c859 0	README
+    100644 8f94139338f9404f26296befa88755fc2598c289 0	Rakefile
+    100644 47c6340d6459e05787f644c2447d2595f5d3a54b 0	lib/simplegit.rb
 
-    index = Rugged::Index.new("/opt/repo/.git/index");
-    index.refresh
-
-    index.each do |entry|
-      puts "File Name: " + entry.path
-      puts " Blob SHA: " + entry.sha
-      puts "File Size: " + entry.file_size.to_s
-      puts "File Mode: " + entry.mode.to_s
-      puts "    mtime: " + entry.mtime.to_i.to_s
-      puts "    ctime: " + entry.ctime.to_i.to_s
-      puts "    Inode: " + entry.ino.to_s
-      puts "      UID: " + entry.uid.to_s
-      puts "      GID: " + entry.gid.to_s
-      puts
-    end
-
-!SLIDE stagingdata
-
-    File Name: README
-     Blob SHA: 45dc653de6860faeb30581cd7654f9a51fc2c443
-    File Size: 135
-    File Mode: 33188
-        mtime: 1301512685
-        ctime: 1301512685
-        Inode: 15472643
-          UID: 501
-          GID: 0
-
-    File Name: Rakefile
-     Blob SHA: ea3fe2ac46e92bf38dc824128e3eddd397f537e3
-    File Size: 604
-    File Mode: 33188
-        mtime: 1301512703
-        ctime: 1301512703
-        Inode: 15472659
-          UID: 501
-          GID: 0
-
-    File Name: lib/simplegit.rb
-     Blob SHA: 47c6340d6459e05787f644c2447d2595f5d3a54b
-    File Size: 355
-    File Mode: 33188
-        mtime: 1301507599
-        ctime: 1301507599
-        Inode: 15445705
-          UID: 501
-          GID: 0
 
 !SLIDE title center
 
